@@ -1,0 +1,7 @@
+# ----- Organizer ----- #
+
+# Ignore node modules.
+node_modules/
+
+# Ignore front-end libraries by bowel.
+src/client/libs
