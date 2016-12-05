@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Organizer App</title>
+
+	<!-- CSS  -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/organizer-custom.css">
+
+    <!-- FRAMEWORKS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="app.js"></script>
+    <script src="js/controller/mainController.js"></script>
+    <script src="js/controller/hobbiesController.js"></script>
+    <script src="js/service/hobbiesService.js"></script>
+    
+    
+</head>
+
+<body data-ng-app="organizerApp">
+
+	<div class="container">
+
+    	<!-- HEADER -->
+    	<nav class="navbar navbar-inverse">
+        	<div class="navbar-header">
+            	<a class="navbar-brand" data-ui-sref="#">Organizer App</a>
+        	</div>
+
+        	<ul class="nav navbar-nav">
+            	<li><a data-ui-sref="hobbies">Hobbies</a></li>
+        	</ul>
+    	</nav>
+
+    	<!-- ANGULAR DYNAMIC CONTENT -->
+    	<div data-ui-view></div>
+
+	</div>
+</body>
+</html>
